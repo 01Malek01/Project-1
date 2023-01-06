@@ -1,0 +1,233 @@
+/* start page */
+html {
+    scroll-behavior: smooth;
+  }  
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+ background-color: rgba(255, 255, 255, 0.945);
+}
+/* start header */
+header .img-container{
+    display: flex;
+    height: 10rem;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+/* end header */
+
+/* start nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: auto;
+    border: 2px solid white;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    border: 1px solid black;
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.747);
+      
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 1s;
+    -webkit-transition: .3s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    background-color: #fff;
+}
+
+nav ul li:hover{
+  background-color: black;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+/* end nav */
+
+/* start main */
+main section{
+    display: flex;
+    height: 80vh;
+    background-color:rgba(112, 112, 112, 0);
+
+}
+article{
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: auto;
+    
+}
+main .first{
+    background-image: url(/imgs/promo.jpg);
+    background-size: cover;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top:.1rem ;
+}
+main .first #p-1{
+    font-size: 8rem;
+    margin: 5rem;
+    color: #fff;
+}
+main .first #p-2{
+    background-color:rgba(255, 255, 255, 0.575);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+main .first .shop-button{
+    background-color: aliceblue;
+    width: 8rem;
+    height: 3rem;
+    border: .5px solid black;
+    margin: 5rem auto auto auto;
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .first .shop-button:hover{
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
+    color: #fff;
+
+}
+main .second article{
+    background-color: rgb(240, 240, 240);
+    border: .5px solid transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 1.5rem;
+}
+/* end main */
+
+/* start footer */
+footer{
+    display: flex;
+    flex-wrap:wrap ;
+}
+footer div{
+    flex: 2;
+    margin-left: 5rem;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+/* end footer */
+
+/* scroll to top btn */
+#top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(204, 33, 33, 0.603);
+    margin: 3rem;
+}
+#top:hover{
+    cursor: pointer;
+}
+
+
+
+/* end btn */
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    
+    nav ul  {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 4;
+    }
+    nav ul li {
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .first{
+    background-image: url(/imgs/promo.jpg);
+    background-size: fill;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top:.1rem ;
+}
+main .first #p-1{
+    font-size:40px;
+    margin: 1rem;
+    color: #fff;
+}
+main .first #p-2{
+    background-color:rgba(255, 255, 255, 0.575);
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+footer{
+  display: none;
+}
+
+
+
+
+
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+
+}
+
+
+/* end page */
